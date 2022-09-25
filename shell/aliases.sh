@@ -25,6 +25,7 @@ alias gl='$DOTLY_PATH/bin/dot git pretty-log'
 # Utils
 alias k='kill -9'
 alias i.='(idea $PWD &>/dev/null &)'
+alias p.='(phpstorm $PWD &>/dev/null &)'
 alias c.='(code $PWD &>/dev/null &)'
 alias o.='open .'
 alias up='dot package update_all'

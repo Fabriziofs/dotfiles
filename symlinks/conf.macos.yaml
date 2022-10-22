@@ -9,7 +9,9 @@
     - ~/.hushlogin
 
 - link:
+    /usr/local/bin/gpg: /opt/homebrew/bin/gpg
     ~/.dotly: os/mac/.dotly
+    ~/.gitconfig: git/.gitconfig
     ~/bin/bash: /opt/homebrew/bin/bash
     ~/bin/date: /opt/homebrew/bin/gdate
     ~/bin/find: /opt/homebrew/bin/gfind

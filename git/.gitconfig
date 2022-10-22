@@ -1,0 +1,8 @@
+# This is Git's per-user configuration file.
+[user]
+	name = Fabrizio Fasanando
+	email = fabriziofasanando2@gmail.com
+[commit]
+	gpgsign = true
+[gpg]
+	program = /usr/local/bin/gpg

@@ -9,3 +9,5 @@
 	program = /usr/local/bin/gpg
 [core]
 	excludesfile = ~/.gitignore_global
+[color]
+	ui = true

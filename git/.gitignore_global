@@ -1,0 +1,9 @@
+# Jetbrains IDE's
+.idea
+*.iml
+*.iws
+.idea-compl
+*.sc
+
+# Mac
+.DS_Store

@@ -12,6 +12,7 @@
     /usr/local/bin/gpg: /opt/homebrew/bin/gpg
     ~/.dotly: os/mac/.dotly
     ~/.gitconfig: git/.gitconfig
+    ~/.gitignore_global: git/.gitignore_global
     ~/bin/bash: /opt/homebrew/bin/bash
     ~/bin/date: /opt/homebrew/bin/gdate
     ~/bin/find: /opt/homebrew/bin/gfind

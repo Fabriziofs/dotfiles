@@ -5,6 +5,8 @@
 	signingkey = 3C9415A2D52DCE44
 [commit]
 	gpgsign = true
+[tag]
+	gpgsign = true
 [gpg]
 	program = /usr/local/bin/gpg
 [core]

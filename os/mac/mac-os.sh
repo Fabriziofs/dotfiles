@@ -15,7 +15,8 @@ while true; do
 done 2>/dev/null &
 
 # Disable the sound effects on boot
-sudo nvram SystemAudioVolume=" "
+# sudo nvram SystemAudioVolume=" "
+sudo nvram StartupMute=%01
 
 # Play user interface sound effects: false
 # defaults write com.apple.systemsound "com.apple.sound.uiaudio.enabled" -int 0

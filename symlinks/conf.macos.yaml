@@ -10,6 +10,7 @@
 
 - link:
     /usr/local/bin/gpg: /opt/homebrew/bin/gpg
+    ~/.config/karabiner: os/mac/karabiner-elements
     ~/.dotly: os/mac/.dotly
     ~/.gitconfig: git/.gitconfig
     ~/.gitignore_global: git/.gitignore_global

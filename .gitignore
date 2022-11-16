@@ -1,1 +1,9 @@
+# Common
+# ----------------------------------
+# Compiled zsh
 shell/zsh/.zim
+
+# MacOS
+# ----------------------------------
+# Karabiner
+/os/mac/karabiner-elements/automatic_backups

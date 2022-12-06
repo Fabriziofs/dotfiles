@@ -7,3 +7,5 @@ shell/zsh/.zim
 # ----------------------------------
 # Karabiner
 /os/mac/karabiner-elements/automatic_backups
+# Brew
+/os/mac/brew/Brewfile.lock.json

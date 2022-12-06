@@ -174,10 +174,10 @@ defaults write NSGlobalDomain com.apple.springing.delay -float 0.2
 # Enable highlight hover effect for the grid view of a stack (Dock)
 defaults write com.apple.dock mouse-over-hilite-stack -bool true
 
-defaults write com.apple.dock tilesize -int 42
+# defaults write com.apple.dock tilesize -int 42
 
 # Change minimize/maximize window effect
-defaults write com.apple.dock mineffect -string "genie"
+# defaults write com.apple.dock mineffect -string "genie"
 
 # Minimize windows into their application’s icon
 defaults write com.apple.dock minimize-to-application -bool false

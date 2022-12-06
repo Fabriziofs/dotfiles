@@ -10,10 +10,12 @@
 
 - link:
     /usr/local/bin/gpg: /opt/homebrew/bin/gpg
+    /usr/local/bin/pinentry-mac: /opt/homebrew/bin/pinentry-mac
     ~/.config/karabiner: os/mac/karabiner-elements
     ~/.dotly: os/mac/.dotly
     ~/.gitconfig: git/.gitconfig
     ~/.gitignore_global: git/.gitignore_global
+    ~/.gnupg/gpg-agent.conf: gpg/gpg-agent.conf
     ~/bin/bash: /opt/homebrew/bin/bash
     ~/bin/date: /opt/homebrew/bin/gdate
     ~/bin/find: /opt/homebrew/bin/gfind

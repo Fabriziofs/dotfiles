@@ -44,5 +44,6 @@ cask "shottr"
 cask "skype"
 cask "slack"
 cask "spotify"
+mas "Amphetamine", id: 937984704
 mas "Bitwarden", id: 1352778147
 mas "Telegram", id: 747648890

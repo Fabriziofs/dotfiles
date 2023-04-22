@@ -34,3 +34,5 @@ alias up='dot package update_all'
 alias els="exa --icons"
 alias ell="els --long --header --group"
 alias ela="els --long --header --group --all"
+
+alias dp="docker_prune"

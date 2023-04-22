@@ -17,3 +17,8 @@ function recent_dirs() {
 
   cd "$(echo "$selected" | sed "s/\~/$escaped_home/")" || echo "Invalid directory"
 }
+
+function docker_prune() {
+docker stop $(docker ps -a -q)
+yes | docker system prune -a
+}

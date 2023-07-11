@@ -2,7 +2,7 @@
 [user]
 	name = Fabrizio Fasanando
 	email = fabriziofasanando2@gmail.com
-	signingkey = 7C5F53C275A84D7E
+	signingkey = 483FC3E2C7485F00
 [commit]
 	gpgsign = true
 [tag]

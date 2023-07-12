@@ -9,3 +9,8 @@ shell/zsh/.zim
 /os/mac/karabiner-elements/automatic_backups
 # Brew
 /os/mac/brew/Brewfile.lock.json
+
+# Linux
+# ----------------------------------
+# Kitty
+/os/linux/kitty/theme.conf

@@ -13,4 +13,4 @@
     ~/.gitconfig: git/.gitconfig
     ~/.gitignore_global: git/.gitignore_global
     ~/.config/kitty: os/linux/kitty
-    ~/.config/kitty/themes/Monokai_Pro.conf: ~/.config/kitty/theme.conf
+    ~/.config/kitty/theme.conf: os/linux/kitty/themes/codely.conf

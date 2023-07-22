@@ -3,8 +3,9 @@ alias sudo='sudo '
 
 alias ..="cd .."
 alias ...="cd ../.."
-alias ll="ls -l"
-alias la="ls -la"
+alias ls="exa --icons"
+alias ll="ls --long --header --group"
+alias la="ll --all"
 alias ~="cd ~"
 alias dotfiles='cd $DOTFILES_PATH'
 
@@ -26,13 +27,7 @@ alias gl='$DOTLY_PATH/bin/dot git pretty-log'
 alias k='kill -9'
 alias i.='(idea $PWD &>/dev/null &)'
 alias p.='(phpstorm $PWD &>/dev/null &)'
-alias c.='(code $PWD &>/dev/null &)'
+alias c.='(coglde $PWD &>/dev/null &)'
 alias o.='open .'
 alias up='dot package update_all'
-
-# Exa
-alias els="exa --icons"
-alias ell="els --long --header --group"
-alias ela="els --long --header --group --all"
-
 alias dp="docker_prune"

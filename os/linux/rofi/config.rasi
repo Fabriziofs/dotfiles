@@ -1,0 +1,10 @@
+configuration {
+	modi: "window,run,drun";
+	display-drun: "Applications";
+	display-window: "Windows";
+	drun-display-format: "{icon} {name}";
+	show-icons: true;
+	font: "CaskaydiaCove Nerd Font 16";
+}
+
+@theme "./themes/Monokai_Pro.rasi"

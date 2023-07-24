@@ -14,3 +14,4 @@
     ~/.gitignore_global: git/.gitignore_global
     ~/.config/kitty: os/linux/kitty
     ~/.config/kitty/theme.conf: os/linux/kitty/themes/codely.conf
+    ~/.config/rofi: os/linux/rofi

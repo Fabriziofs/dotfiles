@@ -1,0 +1,105 @@
+/*******************************************************************************
+ * ROFI Color theme
+ * User : fabriziofs
+ *******************************************************************************/
+
+* {
+  bg0: #262626;
+  bg1: #171717;
+  fg0: #d2d0c8;
+
+  accent-color: #b0d2ac;
+  urgent-color: #EBCB8B;
+
+  background-color: transparent;
+  text-color: @fg0;
+
+  margin: 0;
+  padding: 0;
+  spacing: 0;
+  highlight: bold;
+}
+
+window {
+  width: 960;
+  border: 1;
+  padding: 5;
+  background-color: @bg0;
+}
+
+inputbar {
+  padding: 8px;
+  background-color: @bg1;
+}
+
+prompt, entry, element-icon, element-text {
+  vertical-align: 0.5;
+}
+
+prompt {
+  text-color: @accent-color;
+}
+
+textbox {
+  padding: 8px;
+  background-color: @bg1;
+}
+
+listview {
+  padding: 4px 0;
+  lines: 8;
+  columns: 1;
+
+  fixed-height: false;
+}
+
+element {
+  padding: 8px;
+  spacing: 8px;
+}
+
+element normal normal {
+  text-color: @fg0;
+}
+
+element normal urgent {
+  text-color: @urgent-color;
+}
+
+element normal active {
+  text-color: @accent-color;
+}
+
+element selected {
+  text-color: @bg0;
+}
+
+element selected normal, element selected active {
+  background-color: @accent-color;
+}
+
+element selected urgent {
+  background-color: @urgent-color;
+}
+
+element-icon {
+  size: 1.5em;
+}
+
+element-text {
+  text-color: inherit;
+}
+
+inputbar {
+  children: [ prompt,textbox-prompt-colon,entry,case-indicator ];
+}
+
+entry {
+  padding: 0 0 0 4px;
+}
+
+textbox-prompt-colon {
+  expand: false;
+  str: ":";
+  text-color: @accent-color;
+}

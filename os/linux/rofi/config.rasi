@@ -5,6 +5,7 @@ configuration {
 	drun-display-format: "{icon} {name}";
 	show-icons: true;
 	font: "CaskaydiaCove Nerd Font 16";
+	yoffset: -100;
 }
 
-@theme "./themes/Monokai_Pro.rasi"
+@theme "./themes/Codely.rasi"

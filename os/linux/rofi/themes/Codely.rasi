@@ -21,6 +21,7 @@
 }
 
 window {
+  anchor: center;
   width: 960;
   border: 1;
   padding: 5;

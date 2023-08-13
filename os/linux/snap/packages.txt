@@ -1,0 +1,6 @@
+code
+discord
+firefox
+postman
+slack
+spotify

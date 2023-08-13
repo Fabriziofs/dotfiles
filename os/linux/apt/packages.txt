@@ -1,0 +1,8 @@
+filezilla
+flameshot
+fzf
+google-chrome-stable
+rofi
+rofi-dev
+symfony-cli
+zsh

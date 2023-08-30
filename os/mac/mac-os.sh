@@ -1,5 +1,3 @@
-# Inspired by https://github.com/mathiasbynens/dotfiles/blob/master/.macos
-
 # Close any open System Preferences panes, to prevent them from overriding
 # settings we’re about to change
 osascript -e 'tell application "System Preferences" to quit'
@@ -18,32 +16,14 @@ done 2>/dev/null &
 # sudo nvram SystemAudioVolume=" "
 sudo nvram StartupMute=%01
 
-# Play user interface sound effects: false
-# defaults write com.apple.systemsound "com.apple.sound.uiaudio.enabled" -int 0
-
 # Show scrollbar when scrolling
 defaults write NSGlobalDomain AppleShowScrollBars -string "WhenScrolling"
-
-# Disable the over-the-top focus ring animation
-# defaults write NSGlobalDomain NSUseAnimatedFocusRing -bool false
-
-# Expand save panel by default
-# defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
-# defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 -bool true
-
-# Expand print panel by default
-# defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
-# defaults write NSGlobalDomain PMPrintingExpandedStateForPrint2 -bool true
 
 # Save to disk (not to iCloud) by default
 defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
 
 # Disable the “Are you sure you want to open this application?” dialog
 defaults write com.apple.LaunchServices LSQuarantine -bool false
-
-# Restart automatically if the computer freezes
-# Commented because systemsetup throw a error similar to: https://www.reddit.com/r/macsysadmin/comments/vy1ecd/systemsetup_throws_error99_with_timezones/
-# sudo systemsetup -setrestartfreeze on
 
 # Disable automatic capitalization
 defaults write NSGlobalDomain NSAutomaticCapitalizationEnabled -bool false
@@ -73,20 +53,6 @@ defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool true
 defaults write NSGlobalDomain KeyRepeat -int 1
 defaults write NSGlobalDomain InitialKeyRepeat -int 12
 
-# Set language and text formats
-# Note: if you’re in the US, replace `EUR` with `USD`, `Centimeters` with
-# `Inches`, `en_GB` with `en_US`, and `true` with `false`.
-# defaults write NSGlobalDomain AppleLanguages -array "en-US" "es-GB" "en"
-# defaults write NSGlobalDomain AppleLocale -string "en_GB@currency=EUR"
-# defaults write NSGlobalDomain AppleMeasurementUnits -string "Centimeters"
-# defaults write NSGlobalDomain AppleMetricUnits -bool true
-
-# Show language menu in the top right corner of the boot screen
-# sudo defaults write /Library/Preferences/com.apple.loginwindow showInputMenu -bool true
-
-# Set the timezone; see `sudo systemsetup -listtimezones` for other values
-# sudo systemsetup -settimezone "Europe/Brussels" >/dev/null
-
 ###############################################################################
 # Screen                                                                      #
 ###############################################################################
@@ -108,9 +74,6 @@ defaults write NSGlobalDomain AppleFontSmoothing -int 1
 # Font rendering stuff
 defaults write -g CGFontRenderingFontSmoothingDisabled -bool YES
 
-# Autohide the menu bar
-# defaults write NSGlobalDomain _HIHideMenuBar -bool true
-
 ###############################################################################
 # Finder                                                                      #
 ###############################################################################
@@ -118,10 +81,9 @@ defaults write -g CGFontRenderingFontSmoothingDisabled -bool YES
 # Finder: disable window animations and Get Info animations
 defaults write com.apple.finder DisableAllAnimations -bool true
 
-# Set Desktop as the default location for new Finder windows
-# For other paths, use `PfLo` and `file:///full/path/here/`
-# defaults write com.apple.finder NewWindowTarget -string "PfDe"
-# defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/Desktop/"
+# Set Home as the default location for new Finder windows
+defaults write com.apple.finder NewWindowTarget -string "PfLo"
+defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/"
 
 # Finder: show all filename extensions
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
@@ -173,11 +135,6 @@ defaults write NSGlobalDomain com.apple.springing.delay -float 0.2
 
 # Enable highlight hover effect for the grid view of a stack (Dock)
 defaults write com.apple.dock mouse-over-hilite-stack -bool true
-
-# defaults write com.apple.dock tilesize -int 42
-
-# Change minimize/maximize window effect
-# defaults write com.apple.dock mineffect -string "genie"
 
 # Minimize windows into their application’s icon
 defaults write com.apple.dock minimize-to-application -bool false

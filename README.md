@@ -1,25 +1,37 @@
 <h1 align="center">
-  .dotfiles created using <a href="https://github.com/CodelyTV/dotly">🌚 dotly</a>
+  .dotfiles created using <a href="https://github.com/CodelyTV/dotly">dotly ✨</a>
 </h1>
 
-## Restore your Dotfiles manually
+## Restore manually
 
-* Install git
-* Clone your dotfiles repository `git clone [your repository of dotfiles] $HOME/.dotfiles`
+* Clone dotfiles:
+  ```bash
+  git clone git@github.com:fabriziofs/dotfiles.git $HOME/.dotfiles
+  ```
 * Go to your dotfiles folder `cd $HOME/.dotfiles`
-* Install git submodules `git submodule update --init --recursive modules/dotly`
-* Install your dotfiles `DOTFILES_PATH="$HOME/.dotfiles" DOTLY_PATH="$DOTFILES_PATH/modules/dotly" "$DOTLY_PATH/bin/dot" self install`
+* Install dotly submodules:
+  ```bash
+  git submodule update --init --recursive modules/dotly
+  ```
+* Install your dotfiles:
+  ```bash
+    export DOTFILES_PATH="$HOME/.dotfiles";
+    export DOTLY_PATH="$DOTFILES_PATH/modules/dotly";
+    "$DOTLY_PATH/bin/dot" self install
+  ```
 * Restart your terminal
 * Import your packages `dot package import`
 
-## Restore your Dotfiles with script
+## Restore with script (WIP)
 
 Using wget
+
 ```bash
 bash <(wget -qO- https://raw.githubusercontent.com/CodelyTV/dotly/HEAD/restorer)
 ```
 
 Using curl
+
 ```bash
 bash <(curl -s https://raw.githubusercontent.com/CodelyTV/dotly/HEAD/restorer)
 ```

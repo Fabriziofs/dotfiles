@@ -21,6 +21,11 @@ source "$DOTFILES_PATH/shell/init.sh"
 
 fpath=("$DOTFILES_PATH/shell/zsh/themes" "$DOTFILES_PATH/shell/zsh/completions" "$DOTLY_PATH/shell/zsh/themes" "$DOTLY_PATH/shell/zsh/completions" $fpath)
 
+# Make homebrew's managed completions available https://docs.brew.sh/Shell-Completion#configuring-completions-in-zsh
+if type brew &>/dev/null; then
+    fpath=("$(brew --prefix)/share/zsh/site-functions" $fpath)
+fi
+
 autoload -Uz promptinit && promptinit
 prompt ${DOTLY_THEME:-codely}
 

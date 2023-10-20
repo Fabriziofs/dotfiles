@@ -26,6 +26,10 @@ fi
 
 export FZF_DEFAULT_OPTS="--color=$fzf_colors --reverse"
 
+# Characters duplication on TAB completion https://github.com/sindresorhus/pure/issues/39#issuecomment-386371357
+export LANG=en_US.UTF-8
+export LC_CTYPE=en_US.UTF-8
+
 # ------------------------------------------------------------------------------
 # Path - The higher it is, the more priority it has
 # ------------------------------------------------------------------------------

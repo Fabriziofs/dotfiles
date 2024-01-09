@@ -2,8 +2,7 @@
 
 set -euo pipefail
 
-# source "/Users/fabrizio/.dotfiles/shell/bash/.bashrc" # For MacOS
-source "${DOTFILES_PATH}/.dotfiles/shell/bash/.bashrc" # For Ubuntu
+source "${DOTFILES_PATH}/.dotfiles/shell/bash/.bashrc"
 
 ##? dot, but without environment variables
 ##?

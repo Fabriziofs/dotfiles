@@ -9,7 +9,7 @@
     - ~/.hushlogin
 
 - link:
-    /usr/local/bin/gpg: /opt/homebrew/bin/gpg
+    ~/bin/gpg: /opt/homebrew/bin/gpg
     /usr/local/bin/pinentry-mac: /opt/homebrew/bin/pinentry-mac
     ~/.config/karabiner: os/mac/karabiner-elements
     ~/.warp: os/mac/.warp
